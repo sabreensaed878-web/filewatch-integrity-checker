@@ -1,0 +1,35 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "file1.txt": {
+      "hash": "5fa8c68ddf8771c9b2f5c16fa03c43580f116fc1ed9f93256ad86fabc4bce3e1",
+      "size": 24,
+      "mtime": 1795094222.8949654
+    },
+    "file2.txt": {
+      "hash": "4b2e08073fd9ad0fee97d8efc1b8dc3b1021680fcad50f2bd0d42b652a107284",
+      "size": 24,
+      "mtime": 1795090047.6317353
+    },
+    "file3.txt": {
+      "hash": "d88de0dfdbc539744230f633a5de68d29cb7c6bff0d00f4b215d280ae609565f",
+      "size": 24,
+      "mtime": 1795090047.6337204
+    },
+    "file4.txt": {
+      "hash": "5174010ad026111ea2967a4945d323efbf6641a6b7efaa240ae3a033a542d4cc",
+      "size": 24,
+      "mtime": 1795090047.6357841
+    },
+    "file5.txt": {
+      "hash": "e05703ae053e26a37d71beda34f810a3430ff26dfecacb6e273f4a85249fddf5",
+      "size": 24,
+      "mtime": 1795090047.6379805
+    },
+    "file6.txt": {
+      "hash": "8de43f2235d09c8bec7253f522bff05aab903cd168e54e35830bf13b1e7b213a",
+      "size": 24,
+      "mtime": 1795090047.6398785
+    }
+  }
+}

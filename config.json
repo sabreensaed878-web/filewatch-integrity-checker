@@ -1,0 +1,16 @@
+{
+  "interval_seconds": 3,
+  "log_file": "filewatch.log",
+  "ignore_patterns": [
+    "*.tmp",
+    "*.swp",
+    ".git",
+    ".git/**",
+    "__pycache__",
+    "__pycache__/**",
+    ".pytest_cache",
+    ".pytest_cache/**",
+    "baseline.json",
+    "filewatch.log"
+  ]
+}

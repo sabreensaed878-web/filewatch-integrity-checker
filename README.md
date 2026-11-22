@@ -27,3 +27,4 @@ python filewatch.py baseline test_folder
 - Ignore patterns in `config.json` (e.g., `*.tmp`, `.git`) matched via `fnmatch`.
 - Graceful handling of `PermissionError`, missing files, and `Ctrl+C` (`KeyboardInterrupt`).
 - HMAC-SHA256 baseline signing and tampering detection (`verify_baseline_hmac`).
+# Usage### 1. Create a Baseline Snapshotpython filewatch.py baseline test_folder## Week 3: Continuous Monitoring, Logging & HMAC Signing- Continuous watch mode with configurable interval and colored alerts.- Structured logging with timestamps to filewatch.log.- Ignore patterns in config.json (e.g., *.tmp, .git) matched via fnmatch.- Graceful handling of PermissionError, missing files, and Ctrl+C (KeyboardInterrupt).- HMAC-SHA256 baseline signing and tampering detection (verify_baseline_hmac).

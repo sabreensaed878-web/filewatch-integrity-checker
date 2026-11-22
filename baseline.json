@@ -2,9 +2,9 @@
   "algorithm": "sha256",
   "files": {
     "file1.txt": {
-      "hash": "c07312223405346754a09d0d26e4c9876f6f2ffe31ff7d00119eb10fd362ac78",
+      "hash": "5fa8c68ddf8771c9b2f5c16fa03c43580f116fc1ed9f93256ad86fabc4bce3e1",
       "size": 24,
-      "mtime": 1795169896.7400036
+      "mtime": 1795176784.1826012
     },
     "file2.txt": {
       "hash": "4b2e08073fd9ad0fee97d8efc1b8dc3b1021680fcad50f2bd0d42b652a107284",
@@ -21,15 +21,16 @@
       "size": 24,
       "mtime": 1795090047.6357841
     },
-    "file5.txt": {
-      "hash": "e05703ae053e26a37d71beda34f810a3430ff26dfecacb6e273f4a85249fddf5",
+    "file6.txt": {
+      "hash": "8de43f2235d09c8bec7253f522bff05aab903cd168e54e35830bf13b1e7b213a",
       "size": 24,
-      "mtime": 1795090047.6379805
+      "mtime": 1795176766.7492676
     },
     "new_file.txt": {
       "hash": "ee30beeb785830e120f8273ec9fcbc735438359bf602d4fd50b8c2004e25f1cd",
       "size": 19,
       "mtime": 1795169715.6028035
     }
-  }
+  },
+  "hmac": "5fcc68b709cebdfd9d182aa27a8c8a42edfee3c3d6e9d3faedef6fcc88904237"
 }

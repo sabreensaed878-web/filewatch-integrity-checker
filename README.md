@@ -20,3 +20,10 @@ Scanning or testing systems or directories without authorization is unethical an
 ### 1. Create a Baseline Snapshot
 ```powershell
 python filewatch.py baseline test_folder
+## Week 3: Continuous Monitoring, Logging & HMAC Signing
+
+- Continuous `watch` mode with configurable interval and colored alerts.
+- Structured logging with timestamps to `filewatch.log`.
+- Ignore patterns in `config.json` (e.g., `*.tmp`, `.git`) matched via `fnmatch`.
+- Graceful handling of `PermissionError`, missing files, and `Ctrl+C` (`KeyboardInterrupt`).
+- HMAC-SHA256 baseline signing and tampering detection (`verify_baseline_hmac`).

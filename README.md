@@ -28,3 +28,22 @@ python filewatch.py baseline test_folder
 - Graceful handling of `PermissionError`, missing files, and `Ctrl+C` (`KeyboardInterrupt`).
 - HMAC-SHA256 baseline signing and tampering detection (`verify_baseline_hmac`).
 # Usage### 1. Create a Baseline Snapshotpython filewatch.py baseline test_folder## Week 3: Continuous Monitoring, Logging & HMAC Signing- Continuous watch mode with configurable interval and colored alerts.- Structured logging with timestamps to filewatch.log.- Ignore patterns in config.json (e.g., *.tmp, .git) matched via fnmatch.- Graceful handling of PermissionError, missing files, and Ctrl+C (KeyboardInterrupt).- HMAC-SHA256 baseline signing and tampering detection (verify_baseline_hmac).
+
+## Week 4: Integrity Dashboard, Reporting & Security Documentation
+
+### Dashboard & Report Generation
+- Run \python dashboard.py\ and open \http://127.0.0.1:5000\ to view parsed events from \ilewatch.log\, event-type counts, and a minute-level timeline.
+- Generate \integrity_report.md\ and \integrity_report.html\ directly from the dashboard or via \/report/md\ and \/report/html\.
+
+### Role of File Integrity Monitoring (FIM) in Real Defense
+- Detects unauthorized changes to critical system binaries, configuration files, web roots, and sensitive directories.
+- Supports Security Operations Center (SOC) detection engineering, incident response timelines, and post-incident forensics.
+
+### Security Limitations & Mitigations
+1. **Baseline & Secret Key Tampering:** If an attacker gains high privileges and alters \aseline.json\ along with the HMAC key, integrity checks may report a clean state. Mitigation: Store signing keys in environment variables/secret managers, restrict baseline permissions, and ship logs/hashes to an external or append-only store.
+2. **Polling Interval Blind Spots:** Periodic polling (\--interval\) can miss short-lived file creation/modification between intervals. Mitigation: Use shorter polling intervals for critical paths and pair FIM with real-time OS auditing/EDR telemetry.
+3. **Permission & Access Constraints:** Unreadable or restricted paths can cause scan warnings or incomplete visibility. Mitigation: Run with least-privilege service accounts scoped to required directories and monitor warning logs.
+
+### Ethical Notice
+- Use FileWatch strictly on systems, lab environments, and assets you own or have explicit authorization to monitor.
+
